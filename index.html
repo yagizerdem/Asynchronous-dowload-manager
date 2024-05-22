@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="./animated-counter-prograssbar.css" />
+  </head>
+  <body>
+    <div class="left">
+      <button id="image" class="image">image</button>
+      <button id="sound" class="sound">audio</button>
+      <button id="text" class="text">text</button>
+      <button id="compressed" class="compressed">compressed</button>
+      <button id="all" class="all">all</button>
+    </div>
+    <div class="right">
+      <div class="center">
+        <div id="myGrid" class="ag-theme-quartz" style="height: 300px"></div>
+      </div>
+      <div class="footer">
+        <!-- progress bar -->
+        <input
+          type="range"
+          class="progressbar"
+          id="progressbar"
+          min="0"
+          max="100"
+          value="0"
+          disabled
+        />
+
+        <div>
+          <input
+            type="text"
+            placeholder="enter download"
+            id="urlbar"
+            class="urlbar"
+          />
+          <button id="downloadBtn">start download</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+    <script src="./renderer.js"></script>
+    <script src="./mimeTypes.js"></script>
+    <script src="./animated-counter-prograssbar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.left {
+  width: 200px;
+  height: 100%;
+  background-color: #212121;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.right {
+  width: 600px;
+  height: 100%;
+  background-color: #1f2327;
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background: #303841;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.footer .urlbar {
+  width: 300px;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #1f2327;
+  color: white;
+}
+.footer button {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 30px;
+  border: none;
+  outline: none;
+  background-color: #1f2327;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+}
+.footer .range {
+  width: 300px;
+  height: 10px;
+}
+.footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left > button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #301934;
+  margin: 10px 0 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #303841;
+  font-weight: bolder;
+  font-size: 18px;
+}
+#myGrid {
+  width: 100%;
+  height: 100%;
+}
+.progressbar {
+  width: 90%;
+  height: 8px; /* Height of the slider */
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  visibility: hidden;
+}
